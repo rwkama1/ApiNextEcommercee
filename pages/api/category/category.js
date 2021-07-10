@@ -18,9 +18,10 @@ export default async function (req, res) {
      
       if(req.method==="POST")
       {
-        await cors(req, res)
+   
         try
         {
+          await cors(req, res)
         const data = req.body;
         const dtcat=new Category(data.name,data.description);
         await FactoryLogic.getLCategory().addCategory(dtcat);
@@ -32,9 +33,10 @@ export default async function (req, res) {
       }
       if(req.method==="PUT")
       {
-        await cors(req, res)
+      
         try
         {
+          await cors(req, res)
         const data = req.body;
         const dtcat=new Category(data.name,data.description);
         await FactoryLogic.getLCategory().updateCategory(dtcat);
@@ -46,9 +48,10 @@ export default async function (req, res) {
       }
       if(req.method==="DELETE")
       {
-        await cors(req, res)
+      
         try
         {
+          await cors(req, res)
         const data = req.body;
         const dtcat=new Category(data.name,data.description);
         await FactoryLogic.getLCategory().deleteCategory(dtcat);
