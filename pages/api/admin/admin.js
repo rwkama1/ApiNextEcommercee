@@ -53,7 +53,7 @@ export default async function (req, res)
     await cors(req, res)
     const data = req.body;
     const admin=new Administrator(data.idcard,"","","","");
-    await FactoryLogic.getLUser().addUser(admin);
+    await FactoryLogic.getLUser().deleteUser(admin);
     return res.status(200).send("Success");
     }
     catch (error) {
