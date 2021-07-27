@@ -2,7 +2,7 @@ import cors from "../cors";
 import { FactoryLogic } from "e-commercee/ECommerce/dist/logic/FactoryLogic";
 
 
-export default async function (req, res,session) 
+export default async function (req, res) 
 {
   if(req.method==="GET")
   {
@@ -24,8 +24,6 @@ export default async function (req, res,session)
     {
      const {pusername,ppassword} = req.query;
         const getadmin=await FactoryLogic.getLUser().loginUser(pusername,ppassword);
-        req.session.set("user", getadmin);
-        await req.session.save();
         return res.send(getadmin); 
     }
     catch (error) {
