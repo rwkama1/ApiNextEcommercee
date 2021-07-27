@@ -1,6 +1,6 @@
 import cors from "../cors";
 import { FactoryLogic } from "e-commercee/ECommerce/dist/logic/FactoryLogic";
-import { Administrator } from "e-commercee/ECommerce/dist/shared/entity/Administrator";
+
 
 export default async function (req, res) 
 {
@@ -14,7 +14,7 @@ export default async function (req, res)
         return res.send(getadmin);
     }
     catch (error) {
-      return res.status(500).send("Could not search admin "+error.message);
+      return res.status(500).send("Could not search user "+error.message);
     }
   }
   if(req.method==="POST")
@@ -27,7 +27,7 @@ export default async function (req, res)
         return res.send(getadmin); 
     }
     catch (error) {
-      return res.status(500).send("Could not login admin: "+error.message);    
+      return res.status(500).send("Could not login user: "+error.message);    
       
     }
   }
