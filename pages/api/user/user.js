@@ -2,7 +2,7 @@ import cors from "../cors";
 import { FactoryLogic } from "e-commercee/ECommerce/dist/logic/FactoryLogic";
 
 
-export default async function (req, res) 
+export default async function (req, res,session) 
 {
   if(req.method==="GET")
   {
