@@ -22,7 +22,7 @@ export default async function (req, res) {
       await cors(req, res)
       try
       {
-      const data = req.body;
+     const data = req.body; 
       const getcategory=await FactoryLogic.getLCategory().getCategory(data.categoryname);
       var article=new Article(data.barcode,data.name,data.price,data.stock,data.description,data.img,getcategory);
       await FactoryLogic.getLArticle().addArticle(article);

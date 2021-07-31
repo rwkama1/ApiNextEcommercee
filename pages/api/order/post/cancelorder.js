@@ -8,14 +8,12 @@ export default async function (req, res)
   {
     try
     {
-
         await cors(req, res)
-        const {pdatei,pdatef} = req.query;
-        const getOrder=await FactoryLogic.getLOrder().getOrdersbyDates(pdatei,pdatef);
-        return res.send(getOrder);
+        const cancelorder=await FactoryLogic.getLOrder().cancelOrder();
+        return res.send(cancelorder);
     }
     catch (error) {
-      return res.status(500).send("Could not list orders "+error.message);
+      return res.status(500).send("Could not cancel order "+error.message);
     }
   }
 }
