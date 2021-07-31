@@ -8,10 +8,9 @@ export default async function (req, res)
   {
     try
     {
-
         await cors(req, res)
-        const {pdatei,pdatef} = req.query;
-        const getOrder=await FactoryLogic.getLOrder().getOrdersbyDates(pdatei,pdatef);
+        const data = req.body;
+        const getOrder=await FactoryLogic.getLOrder().getOrdersbyDates(data.datei,data.bodydatef);
         return res.send(getOrder);
     }
     catch (error) {
