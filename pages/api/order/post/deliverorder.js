@@ -1,4 +1,4 @@
-import cors from "../cors";
+import cors from "../../cors";
 import { FactoryLogic } from "e-commercee/ECommerce/dist/logic/FactoryLogic";
 
 
