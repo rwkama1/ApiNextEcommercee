@@ -15,7 +15,7 @@ export default async function (req, res)
         return res.send(getOrder);
     }
     catch (error) {
-      return res.status(500).send("Could not list orders "+error.message);
+      return res.status(500).send("Could not search orders "+error.message);
     }
   }
 }
