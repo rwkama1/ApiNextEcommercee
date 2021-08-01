@@ -11,7 +11,7 @@ export default async function (req, res)
 
         await cors(req, res)
         const {pid} = req.query;
-        let id=pid;
+        let id=Number(pid);
         const getOrder=await FactoryLogic.getLOrder().getOrder(id);
         return res.send(getOrder);
     }
