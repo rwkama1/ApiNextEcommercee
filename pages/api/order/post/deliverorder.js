@@ -15,7 +15,7 @@ export default async function (req, res)
         return res.send(deliverorder);
     }
     catch (error) {
-      return res.status(500).send("Could not close order "+error.message);
+      return res.status(500).send("Could not deliver order "+error.message);
     }
   }
 }
