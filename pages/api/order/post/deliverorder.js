@@ -10,7 +10,7 @@ export default async function (req, res)
     {
         await cors(req, res)
         const {pid} = req.query;
-        const getorder=await FactoryLogic.getLUser().getOrder(pid);
+        const getorder=await FactoryLogic.getLOrder().getOrder(pid);
         const deliverorder=await FactoryLogic.getLOrder().deliverOrder(getorder);
         return res.send(deliverorder);
     }
