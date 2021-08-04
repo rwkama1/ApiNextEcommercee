@@ -4,8 +4,9 @@ import { FactoryLogic } from "e-commercee/ECommerce/dist/logic/FactoryLogic";
 
 export default async function (req, res) 
 {
- if(req.method==="GET")
+ if(req.method==="POST")
   {
+    
     try
     {
         await cors(req, res)
