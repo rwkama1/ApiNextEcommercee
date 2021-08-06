@@ -10,7 +10,16 @@
 
 #### POST
 
-###### https://api-next-ecommercee.vercel.app/api/admin/admin
+https://api-next-ecommercee.vercel.app/api/admin/admin
+
+Body-raw-JSON
+{
+    "idcard":"457852",
+    "name":"name",
+    "password":"password",
+    "username":"username",
+    "position":"position"
+}
 
 #### PUT
 
