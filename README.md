@@ -6,7 +6,7 @@
 
 #### GET
 
-###### https://api-next-ecommercee.vercel.app/api/admin/admin
+ https://api-next-ecommercee.vercel.app/api/admin/admin
 
 #### POST
 
@@ -41,12 +41,8 @@ Body-raw-JSON
 
  https://api-next-ecommercee.vercel.app/api/admin/admin
 
- 
 Body-raw-JSON
 
-<br>
-{
-    <br>
+{  
     "idcard":"457852"
-    <br>
 }
