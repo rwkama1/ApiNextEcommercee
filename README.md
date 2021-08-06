@@ -24,8 +24,29 @@ Body-raw-JSON
 
 #### PUT
 
-###### https://api-next-ecommercee.vercel.app/api/admin/admin
+https://api-next-ecommercee.vercel.app/api/admin/admin
+
+Body-raw-JSON
+<br>
+{
+    "idcard":"457852",
+    "name":"name",
+    "password":"password",
+    "username":"username",
+    "position":"position"
+}
+
 
 #### DELETE
 
-###### https://api-next-ecommercee.vercel.app/api/admin/admin
+ https://api-next-ecommercee.vercel.app/api/admin/admin
+
+ 
+Body-raw-JSON
+
+<br>
+{
+    <br>
+    "idcard":"457852"
+    <br>
+}
