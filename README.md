@@ -35,6 +35,7 @@ https://api-next-ecommercee.vercel.app/api/admin/admin
 Body-raw-JSON
 
 {
+    
     "idcard":"457852",
 
     "name":"name",
