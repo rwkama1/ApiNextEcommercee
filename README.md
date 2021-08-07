@@ -300,3 +300,77 @@ https://api-next-ecommercee.vercel.app/api/user/user?pidcard=72289541
 https://api-next-ecommercee.vercel.app/api/user/user?pusername=Admin3&ppassword=Admin3
 
 ### ORDER  
+
+#### Start Order (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/post/startorder
+
+#### Register Item Order (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/post/registeritemorder
+
+Body-raw-JSON
+
+{
+
+    "barcode":"152345688789546",
+    "quantity":1
+
+}
+#### Close Order (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/post/closeorder
+
+#### Save Order (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/post/saveorder?pidcard=72289541
+
+#### Deliver Order (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/post/deliverorder?pid=54654654
+
+#### Remove Item Order (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/post/removeitemonorder
+
+Body-raw-JSON
+
+{
+
+    "barcode":"152345688789546"
+   
+
+}
+
+#### Cancel Order (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/post/cancelorder
+
+#### Get Client Orders (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/get/getclientorders?pidcard=72289541
+
+#### Get Client Orders (GET)
+
+https://api-next-ecommercee.vercel.app/api/order/get/getdeliveredorders
+
+#### Get Order (GET)
+
+https://api-next-ecommercee.vercel.app/api/order/get/getorder?pid=6791169809
+
+#### Get Pending Orders (GET)
+
+https://api-next-ecommercee.vercel.app/api/order/get/getpendingorders
+
+#### Get Orders by Date (POST)
+
+https://api-next-ecommercee.vercel.app/api/order/get/getordersbydate
+
+Body-raw-JSON
+{
+
+    "datei": "2021-06-12",
+    "datef": "2022-08-22"
+    
+}
+
