@@ -1,5 +1,14 @@
 # APIREST NextJS E-commerce
 
+## Index
+
+<a name="Admin"> Admin</a>
+<a name="Customer"> Customer</a>
+<a name="Category"> Category</a>
+<a name="Article"> Article</a>
+<a name="User"> User</a>
+<a name="Order"> Order</a>
+
 ## Usage
 
 ### ADMIN
@@ -371,6 +380,6 @@ Body-raw-JSON
 
     "datei": "2021-06-12",
     "datef": "2022-08-22"
-    
+
 }
 
