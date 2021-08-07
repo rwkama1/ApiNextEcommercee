@@ -2,12 +2,19 @@
 
 ## Index
 
-<a name="Admin"> Admin</a>
+1. [Admin](#Admin)
+2. [Customer](#Customer)
+3. [Category](#Category)
+4. [Article](#Article)
+4. [User](#User)
+5. [Order](#Order)
+
+<!-- <a name="Admin"> Admin</a>
 <a name="Customer"> Customer</a>
 <a name="Category"> Category</a>
 <a name="Article"> Article</a>
 <a name="User"> User</a>
-<a name="Order"> Order</a>
+<a name="Order"> Order</a> -->
 
 ## Usage
 
