@@ -9,7 +9,6 @@
 4. [User](#User)
 5. [Order](#Order)
 
-
 ## Usage
 
 ### ADMIN
@@ -69,7 +68,6 @@ Body-raw-JSON
     "idcard":"457852"
 
 }
-
 
 
 ### CUSTOMER
@@ -134,7 +132,6 @@ Body-raw-JSON
 
 }
 
-
 ### CATEGORY
 
 #### GET
@@ -191,7 +188,6 @@ https://api-next-ecommercee.vercel.app/api/category/getcategories
 #### Get Categories by Name (GET)
 
 https://api-next-ecommercee.vercel.app/api/category/getcategoriesbyname?pname=C
-
 ### ARTICLE  
 
 
@@ -308,7 +304,6 @@ https://api-next-ecommercee.vercel.app/api/user/user?pidcard=72289541
 #### POST
 
 https://api-next-ecommercee.vercel.app/api/user/user?pusername=Admin3&ppassword=Admin3
-
 ### ORDER  
 
 #### Start Order (POST)

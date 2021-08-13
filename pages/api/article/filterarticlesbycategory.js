@@ -1,13 +1,13 @@
 import cors from "../cors";
 import { FactoryLogic } from "e-commercee/ECommerce/dist/logic/FactoryLogic";
 export default async function (req, res) {
-    if(req.method==="POST")
+    if(req.method==="GET")
     {
       try
        {
          await cors(req, res)
-         const data = req.body;
-          const getarticles=await FactoryLogic.getLArticle().filterArticlesbyCategory(data.categoryname);
+         const {pname} = req.query;
+          const getarticles=await FactoryLogic.getLArticle().filterArticlesbyCategory(pname);
           return res.send(getarticles);
         }
         catch (error) {
