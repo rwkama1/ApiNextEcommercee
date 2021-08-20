@@ -22,7 +22,7 @@ export default async function (req, res)
     try
     {
     const data = req.body;
-    var client=new Client(data.idcard,data.name,data.password,data.username,data.address,data.creditcard);
+    var client=new Client("",data.idcard,data.name,data.password,data.username,data.address,data.creditcard);
     await FactoryLogic.getLUser().addUser(client);
     return res.status(200).send("Success");   
     }
@@ -37,7 +37,7 @@ export default async function (req, res)
     try
     {
     const data = req.body;
-    var client=new Client(data.idcard,data.name,data.password,data.username,data.address,data.creditcard);
+    var client=new Client("",data.idcard,data.name,data.password,data.username,data.address,data.creditcard);
     await FactoryLogic.getLUser().updateUser(client);
     return res.status(200).send("Success");   
     }
@@ -52,7 +52,7 @@ export default async function (req, res)
     {
     await cors(req, res)
     const data = req.body;
-    const client=new Client(data.idcard,"","","","","");
+    const client=new Client("",data.idcard,"","","","","");
     await FactoryLogic.getLUser().deleteUser(client);
     return res.status(200).send("Success");
     }

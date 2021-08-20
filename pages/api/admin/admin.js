@@ -22,7 +22,7 @@ export default async function (req, res)
     try
     {
     const data = req.body;
-    var admin=new Administrator(data.idcard,data.name,data.password,data.username,data.position);
+    var admin=new Administrator("",data.idcard,data.name,data.password,data.username,data.position);
     await FactoryLogic.getLUser().addUser(admin);
     return res.status(200).send("Success");   
     }
@@ -37,7 +37,7 @@ export default async function (req, res)
     try
     {
     const data = req.body;
-    var admin=new Administrator(data.idcard,data.name,data.password,data.username,data.position);
+    var admin=new Administrator("",data.idcard,data.name,data.password,data.username,data.position);
     await FactoryLogic.getLUser().updateUser(admin);
     return res.status(200).send("Success");   
     }
@@ -52,7 +52,7 @@ export default async function (req, res)
     {
     await cors(req, res)
     const data = req.body;
-    const admin=new Administrator(data.idcard,"","","","");
+    const admin=new Administrator("",data.idcard,"","","","");
     await FactoryLogic.getLUser().deleteUser(admin);
     return res.status(200).send("Success");
     }
