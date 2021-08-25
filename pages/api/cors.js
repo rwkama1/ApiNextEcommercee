@@ -5,6 +5,8 @@ const cors = initMiddleware(
   // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
   Cors({
     // Only allow requests with GET, POST,PUT,DELETE and OPTIONS
+    origin: '*',
+  
     methods: ['GET', 'POST', 'PUT','DELETE','OPTIONS'],
   })
 )
