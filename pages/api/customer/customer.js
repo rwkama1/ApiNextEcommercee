@@ -4,6 +4,16 @@ import { Client } from "e-commercee/ECommerce/dist/shared/entity/Client";
 
 export default async function (req, res) 
 {
+  if(req.method==="OPTIONS")
+  {
+    try
+    {
+        return res.status(200).send("OK")
+    }
+    catch (error) {
+      return res.status(500).send("Could not list client "+error.message);
+    }
+  }
   if(req.method==="GET")
   {
     try
