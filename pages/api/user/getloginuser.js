@@ -10,7 +10,15 @@ export default async function (req, res)
     {
         await cors(req, res)
         const getuser= FactoryLogic.getLUser().getLoginUser();
-        return res.send(getuser);
+        if(getuser===null)
+        {
+          return res.send(null);
+        }
+        else
+        {
+          return res.send(getuser);
+        }
+       
     }
     catch (error) {
       return res.status(500).send("Could not search login user "+error.message);
