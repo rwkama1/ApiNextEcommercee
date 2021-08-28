@@ -12,7 +12,7 @@ export default async function (req, res)
         const getuser= FactoryLogic.getLUser().getLoginUser();
         if(getuser===null)
         {
-          return res.send(null);
+          return res.send("null");
         }
         else
         {
