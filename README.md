@@ -297,6 +297,14 @@ Body-raw-JSON
 }
 ### USER  
 
+#### Get Login User (GET)
+
+https://api-next-ecommercee.vercel.app/api/user/getloginuser
+
+#### Logout (POST)
+
+https://api-next-ecommercee.vercel.app/api/user/logout
+
 #### GET
 
 https://api-next-ecommercee.vercel.app/api/user/user?pidcard=72289541
