@@ -26,7 +26,7 @@ export default async function (req, res)
         const getadmin=await FactoryLogic.getLUser().loginUser(pusername,ppassword);
         if(getadmin===null)
         {
-         return res.send(null); 
+         return res.send("null"); 
         }
         else
         {
