@@ -10,7 +10,7 @@ export default async function (req, res)
     {
         await cors(req, res)
         const getuser= FactoryLogic.getLUser().getLoginUser();
-        if(getuser==null)
+        if(getuser===null)
         {
           return res.send("null");
         }
